@@ -5,7 +5,7 @@
             const usStats = await requests.usStats();
             return { usStats }
         } catch (e) {
-            
+            console.log(e);
         }
     }
 </script>
@@ -14,9 +14,9 @@
     import CovidStat from '../components/CovidStat.svelte';
     import CovidChart from '../components/CovidChart.svelte';
     import TableContainer from '../components/TableContainer.svelte';
+import Error from './_error.svelte';
 
     export let usStats;
-    console.log(usStats, "usStats");
 </script>
 
 <style>
