@@ -4,6 +4,31 @@
     import TableContainer from '../components/TableContainer.svelte';
 </script>
 
+<style>
+    .section {
+        padding: 1.5rem
+    }
+
+    h1 {
+        font-size: 2.3rem;
+        margin: 0;
+    }
+
+    .section.header {
+        padding: 0.25rem 1.5rem;
+    }
+</style>
+
+<svelte:head>
+    <title>Covid-19 US Tracking</title>
+</svelte:head>
+
+<div class="section header">
+    <div class="container">
+        <h1>Covid-19 - US</h1>
+    </div>
+</div>
+
 <CovidStat />
 <CovidChart />
 <TableContainer />
