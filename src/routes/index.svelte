@@ -1,5 +1,6 @@
 <script context="module">
     import requests from '../data/requests.js'
+
     export async function preload() {
         try {
             const usStats = await requests.usStats();
